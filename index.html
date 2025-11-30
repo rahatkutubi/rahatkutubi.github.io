@@ -15,16 +15,38 @@
             font-size: 15px;
             line-height: 1.6;
             color: #333;
-            /* UPDATED: Increased width to 1200px for a "Wider" look */
             max-width: 1200px; 
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 20px;
             background-color: #fff;
         }
-        
         a { color: #0066cc; text-decoration: none; transition: color 0.2s; }
         a:hover { color: #004499; text-decoration: underline; }
         strong { color: #000; font-weight: 600; }
+
+        /* -----------------------------------------------------------------------
+           TOP MENU
+           ----------------------------------------------------------------------- */
+        .top-menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #fafafa;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .top-menu a {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #800000;
+        }
+        .top-menu a:hover {
+            color: #c00;
+        }
 
         /* -----------------------------------------------------------------------
            HEADER SECTION
@@ -32,30 +54,26 @@
         .header-container {
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Aligns image and text vertically */
+            align-items: center;
             margin-bottom: 50px;
             border-bottom: 1px solid #f0f0f0;
             padding-bottom: 40px;
         }
         
         .bio-content {
-            width: 70%; /* Takes up 70% of the width */
+            width: 70%;
             padding-right: 40px;
         }
         
         .bio-content h1 {
-            font-size: 36px; /* Made name slightly larger */
+            font-size: 36px;
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 10px;
             color: #111;
         }
         
-        .bio-meta {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 25px;
-        }
+        .bio-meta { font-size: 16px; color: #555; margin-bottom: 25px; }
         .bio-meta span { display: block; margin-bottom: 4px; }
         
         .social-links {
@@ -65,14 +83,9 @@
         }
         .social-links a { margin-right: 20px; font-weight: bold; }
 
-        .profile-img-container {
-            width: 30%; /* Takes up 30% of the width */
-            text-align: right; /* Aligns image to the right */
-        }
-        
+        .profile-img-container { width: 30%; text-align: right; }
         .profile-img {
-            width: 250px; /* Slightly larger image */
-            height: 250px;
+            width: 250px; height: 250px;
             object-fit: cover;
             border-radius: 50%;
             box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -82,102 +95,34 @@
         /* -----------------------------------------------------------------------
            SECTIONS
            ----------------------------------------------------------------------- */
-        h2 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 60px;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-            color: #111;
-        }
+        h2 { font-size: 24px; font-weight: 700; margin-top: 60px; margin-bottom: 30px;
+             padding-bottom: 10px; border-bottom: 1px solid #eee; color: #111; }
 
-        /* -----------------------------------------------------------------------
-           NEWS ITEMS
-           ----------------------------------------------------------------------- */
+        /* NEWS ITEMS */
         .news-item { margin-bottom: 15px; font-size: 15px; }
-        .news-date { 
-            font-family: 'Courier New', monospace; 
-            font-weight: bold; 
-            color: #444; 
-            margin-right: 10px; 
-            background: #f5f5f5;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
+        .news-date { font-family: 'Courier New', monospace; font-weight: bold; color: #444; margin-right: 10px; background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }
 
-        /* -----------------------------------------------------------------------
-           PUBLICATIONS & PROJECTS GRID
-           ----------------------------------------------------------------------- */
-        .item-container {
-            display: flex;
-            margin-bottom: 40px;
-            gap: 35px;
-        }
-        
-        .item-teaser {
-            flex: 0 0 260px; /* Fixed width for teaser images */
-            max-width: 260px;
-        }
-        
-        .item-teaser img {
-            width: 100%;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border: 1px solid #f2f2f2;
-        }
-        
+        /* PUBLICATIONS & PROJECTS */
+        .item-container { display: flex; margin-bottom: 40px; gap: 35px; }
+        .item-teaser { flex: 0 0 260px; max-width: 260px; }
+        .item-teaser img { width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #f2f2f2; }
         .item-details { flex: 1; }
-        
-        .item-title {
-            font-weight: 700;
-            font-size: 18px;
-            color: #000;
-            display: block;
-            margin-bottom: 8px;
-        }
-        
+        .item-title { font-weight: 700; font-size: 18px; color: #000; display: block; margin-bottom: 8px; }
         .item-meta { color: #555; margin-bottom: 8px; font-size: 15px; }
         .item-venue { font-style: italic; color: #666; margin-bottom: 12px; font-size: 15px; }
         .item-desc { font-size: 15px; color: #444; line-height: 1.6; margin-bottom: 15px; }
-        
-        .tag-links a {
-            display: inline-block;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            padding: 4px 10px;
-            margin-right: 8px;
-            color: #555;
-            background-color: #fcfcfc;
-        }
+        .tag-links a { display: inline-block; font-size: 12px; font-weight: 600; text-transform: uppercase; border: 1px solid #ddd; border-radius: 3px; padding: 4px 10px; margin-right: 8px; color: #555; background-color: #fcfcfc; }
         .tag-links a:hover { background-color: #f0f0f0; color: #000; text-decoration: none; }
 
-        /* -----------------------------------------------------------------------
-           LISTS (Education/Experience)
-           ----------------------------------------------------------------------- */
+        /* EXPERIENCE/EDUCATION */
         .exp-list { list-style: none; padding: 0; }
-        .exp-item {
-            display: flex;
-            margin-bottom: 20px;
-            border-left: 3px solid #eee;
-            padding-left: 25px;
-        }
-        .exp-date {
-            flex: 0 0 140px;
-            font-weight: bold;
-            color: #666;
-            font-size: 15px;
-        }
+        .exp-item { display: flex; margin-bottom: 20px; border-left: 3px solid #eee; padding-left: 25px; }
+        .exp-date { flex: 0 0 140px; font-weight: bold; color: #666; font-size: 15px; }
         .exp-detail { flex: 1; }
         .exp-role { font-weight: bold; font-size: 16px; color: #000; }
         .exp-place { color: #555; margin-top: 2px; }
 
-        /* -----------------------------------------------------------------------
-           MOBILE RESPONSIVENESS
-           ----------------------------------------------------------------------- */
+        /* RESPONSIVE */
         @media (max-width: 800px) {
             .header-container { flex-direction: column-reverse; text-align: center; }
             .bio-content { width: 100%; padding: 0; }
@@ -192,7 +137,17 @@
 </head>
 <body>
 
-    <div class="header-container">
+    <!-- ================= TOP MENU ================= -->
+    <div class="top-menu">
+        <a href="#home">Homepage</a>
+        <a href="#about">About Me</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <div class="header-container" id="home">
         <div class="bio-content">
             <h1>Abdullah Al Rahat</h1>
             
@@ -223,7 +178,8 @@
         </div>
     </div>
 
-    <h2>🔥 News</h2>
+    <!-- ================= NEWS ================= -->
+    <h2 id="news">🔥 News</h2>
     <div class="news-item">
         <span class="news-date">[Dec 2024]</span>
         Paper "Dataset Augmentation by Mixing Visual Concepts" accepted to <strong>WACV 2025</strong>!
@@ -233,7 +189,8 @@
         Started Ph.D. journey at Georgia State University.
     </div>
 
-    <h2>📝 Selected Publications</h2>
+    <!-- ================= PUBLICATIONS ================= -->
+    <h2 id="publications">📝 Selected Publications</h2>
 
     <div class="item-container">
         <div class="item-teaser">
@@ -242,7 +199,7 @@
         <div class="item-details">
             <a href="https://arxiv.org/abs/2412.15358" class="item-title">Dataset Augmentation by Mixing Visual Concepts</a>
             <div class="item-meta"><strong>Abdullah Al Rahat</strong>, Hemanth Venkateswara</div>
-            <div class="item-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025</div>
+            <div class="item-venue">IEEE/CVF WACV, 2025</div>
             <div class="item-desc">
                 We propose a novel method for augmenting datasets by mixing visual concepts at the feature level to improve model robustness in low-data regimes.
             </div>
@@ -253,71 +210,8 @@
         </div>
     </div>
 
-    <div class="item-container">
-        <div class="item-teaser">
-             <img src="assets/payment_teaser.png" alt="Payment Teaser" onerror="this.style.display='none'">
-        </div>
-        <div class="item-details">
-            <a href="https://www.sciencedirect.com/science/article/pii/S2667295221000210" class="item-title">A Simplified Scheme for Secure Offline Electronic Payment Systems</a>
-            <div class="item-meta"><strong>Kutubi, Md Abdullah Al Rahat</strong>, Kazi Md Rokibul Alam, Yasuhiko Morimoto</div>
-            <div class="item-venue">High-Confidence Computing, 2021</div>
-            <div class="tag-links">
-                <a href="https://www.sciencedirect.com/science/article/pii/S2667295221000210">[Paper]</a>
-            </div>
-        </div>
-    </div>
-
-    <h2>🛠️ Projects</h2>
-
-    <div class="item-container">
-        <div class="item-details">
-            <span class="item-title">NaturalEdit: Instruction-based Image Editing</span>
-            <div class="item-desc">
-                Natural instruction-based image editing with Diffusion Models. Developing a pipeline for editing images using natural language instructions.
-            </div>
-            <div class="tag-links">
-                <span style="font-size:13px; color:#555; background:#f0f0f0; padding:2px 8px; border-radius:4px;">Python</span>
-                <span style="font-size:13px; color:#555; background:#f0f0f0; padding:2px 8px; border-radius:4px;">PyTorch</span>
-                <span style="font-size:13px; color:#555; background:#f0f0f0; padding:2px 8px; border-radius:4px;">Diffusers</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="item-container">
-        <div class="item-details">
-            <span class="item-title">RSNA-MICCAI Brain Tumor Radiogenomic Classification</span>
-            <div class="item-desc">
-                Deep learning approach for the classification of brain tumors using radiogenomic data.
-            </div>
-        </div>
-    </div>
-
-    <h2>💼 Experience</h2>
-    <ul class="exp-list">
-        <li class="exp-item">
-            <div class="exp-date">2021 – Present</div>
-            <div class="exp-detail">
-                <div class="exp-role">Graduate Research Assistant</div>
-                <div class="exp-place">Georgia State University, Atlanta, GA</div>
-            </div>
-        </li>
-        <li class="exp-item">
-            <div class="exp-date">2017 – 2021</div>
-            <div class="exp-detail">
-                <div class="exp-role">Lecturer</div>
-                <div class="exp-place">BAUET, Bangladesh</div>
-            </div>
-        </li>
-        <li class="exp-item">
-            <div class="exp-date">2015 – 2017</div>
-            <div class="exp-detail">
-                <div class="exp-role">Research Assistant</div>
-                <div class="exp-place">Kookmin University, South Korea</div>
-            </div>
-        </li>
-    </ul>
-
-    <h2>🎓 Education</h2>
+    <!-- ================= EDUCATION ================= -->
+    <h2 id="education">🎓 Education</h2>
     <ul class="exp-list">
         <li class="exp-item">
             <div class="exp-date">2021 – Present</div>
@@ -330,14 +224,14 @@
             <div class="exp-date">2015 – 2017</div>
             <div class="exp-detail">
                 <div class="exp-role">M.Sc. in Applied Information Technology</div>
-                <div class="exp-place">Kookmin University, South Korea (CGPA: 4.5/4.5)</div>
+                <div class="exp-place">Kookmin University, South Korea</div>
             </div>
         </li>
         <li class="exp-item">
             <div class="exp-date">2010 – 2014</div>
             <div class="exp-detail">
                 <div class="exp-role">B.Sc. in Computer Science and Engineering</div>
-                <div class="exp-place">KUET, Khulna, Bangladesh</div>
+                <div class="exp-place">KUET, Bangladesh</div>
             </div>
         </li>
     </ul>
