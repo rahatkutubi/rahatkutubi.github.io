@@ -1,3 +1,14 @@
-title: "Abdullah Al Rahat"  
-description: "Ph.D. Student — Generative AI, Vision-Language, 3D / Image Editing"  
-theme: jekyll-theme-minimal  
+title: "Abdullah Al Rahat"
+description: "Ph.D. Student — Generative AI & Vision-Language Research"
+theme: jekyll-theme-minimal
+logo: /assets/profile.jpg
+show_downloads: false
+
+# Navigation
+pages:
+  - index.md
+  - publications.md
+  - projects.md
+  - cv.md
+  - contact.md
+
