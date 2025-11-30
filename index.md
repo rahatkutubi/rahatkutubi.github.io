@@ -6,7 +6,7 @@ title: Abdullah Al Rahat
 <style>
     /* GLOBAL FONTS & SETTINGS */
     body {
-        font-family: 'Verdana', sans-serif; /* Clean sans-serif like the reference */
+        font-family: 'Verdana', sans-serif;
         font-size: 15px;
         line-height: 1.6;
         color: #333;
@@ -64,7 +64,7 @@ title: Abdullah Al Rahat
     .news-item { margin-bottom: 8px; }
     .news-date { font-family: 'Courier New', monospace; font-weight: bold; margin-right: 10px; }
 
-    /* PUBLICATION GRID (The Haozhe Zhao Style) */
+    /* PUBLICATION GRID */
     .pub-item {
         display: flex;
         margin-bottom: 40px;
@@ -91,7 +91,7 @@ title: Abdullah Al Rahat
         text-transform: uppercase;
         font-weight: 600;
     }
-
+    
     /* RESPONSIVE FOR MOBILE */
     @media (max-width: 700px) {
         .header-container { flex-direction: column-reverse; text-align: center; }
@@ -107,20 +107,19 @@ title: Abdullah Al Rahat
     <div class="bio-content">
         <h1>Abdullah Al Rahat</h1>
         <p>
-            I am a Ph.D. student in Computer Science at <a href="https://www.gsu.edu/">Georgia State University</a>, advised by <a href="YOUR_ADVISOR_LINK">Dr. Hemanth Venkateswara</a>[cite: 6, 63].
+            I am a Ph.D. [cite_start]Student in Computer Science at <a href="https://www.gsu.edu/">Georgia State University</a>[cite: 6], advised by <a href="#">Dr. Hemanth Venkateswara</a>.
         </p>
         <p>
-            My research interests lie in <strong>Generative AI</strong>, <strong>Vision-Language Models (VLMs)</strong>, and <strong>Diffusion Models</strong>[cite: 4]. I am particularly interested in instruction-based image editing and dataset augmentation strategies to improve model robustness.
+            [cite_start]My research interests lie in <strong>Generative AI</strong>, <strong>Large Language Models (LLM)</strong>, <strong>Vision-Language Models (VLM)</strong>, and <strong>Diffusion Models</strong>[cite: 4]. [cite_start]I am currently working on instruction-based image editing and dataset augmentation strategies[cite: 56, 57].
         </p>
         <p>
-            Previously, I received my M.Sc. from <a href="https://english.kookmin.ac.kr/">Kookmin University</a> and served as a Lecturer at BAUET[cite: 9, 50].
+            [cite_start]Previously, I served as a Lecturer at BAUET [cite: 50] [cite_start]and received my M.Sc. in Applied Information Technology from Kookmin University, South Korea[cite: 8, 9].
         </p>
         <div class="social-links">
             <a href="mailto:rahatcse2k9@gmail.com">Email</a>
             <a href="assets/rahat_resume.pdf">CV</a>
-            <a href="YOUR_SCHOLAR_LINK">Google Scholar</a>
             <a href="https://github.com/rahatkutubi">GitHub</a>
-            <a href="YOUR_LINKEDIN_LINK">LinkedIn</a>
+            <a href="YOUR_SCHOLAR_LINK">Google Scholar</a>
         </div>
     </div>
     <div class="profile-img-container">
@@ -131,11 +130,11 @@ title: Abdullah Al Rahat
 <h2>🔥 News</h2>
 <div class="news-item">
     <span class="news-date">[Dec 2024]</span>
-    One paper accepted to <strong>WACV 2025</strong>! [cite: 63]
+    [cite_start]Paper accepted to <strong>WACV 2025</strong>[cite: 63].
 </div>
 <div class="news-item">
     <span class="news-date">[Aug 2021]</span>
-    Started my Ph.D. journey at Georgia State University. [cite: 10]
+    [cite_start]Started Ph.D. at Georgia State University[cite: 10].
 </div>
 
 <h2>📝 Selected Publications</h2>
@@ -147,13 +146,13 @@ title: Abdullah Al Rahat
     <div class="pub-details">
         <a href="https://arxiv.org/abs/2412.15358" class="pub-title">Dataset Augmentation by Mixing Visual Concepts</a>
         <div class="pub-authors">
-            <strong>Abdullah Al Rahat</strong>, Hemanth Venkateswara
+            [cite_start]<strong>Abdullah Al Rahat</strong>, Hemanth Venkateswara [cite: 63]
         </div>
         <div class="pub-venue">
             IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025
         </div>
         <div class="pub-desc">
-            We introduce a novel augmentation technique that mixes visual concepts at the feature level to improve generalization in low-data regimes. [cite: 63]
+            We propose a novel method for augmenting datasets by mixing visual concepts to improve model robustness in low-data regimes.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2412.15358">[arXiv]</a>
@@ -165,12 +164,12 @@ title: Abdullah Al Rahat
 
 <div class="pub-item">
     <div class="pub-teaser">
-        <img src="assets/payment_teaser.png" alt="Payment System">
+        <img src="https://via.placeholder.com/220x140?text=Secure+Payment" alt="Payment System">
     </div>
     <div class="pub-details">
         <a href="https://www.sciencedirect.com/science/article/pii/S2667295221000210" class="pub-title">A Simplified Scheme for Secure Offline Electronic Payment Systems</a>
         <div class="pub-authors">
-            <strong>Kutubi, Md Abdullah Al Rahat</strong>, Kazi Md Rokibul Alam, Yasuhiko Morimoto
+            [cite_start]<strong>Kutubi, Md Abdullah Al Rahat</strong>, Kazi Md Rokibul Alam, Yasuhiko Morimoto [cite: 64]
         </div>
         <div class="pub-venue">
             High-Confidence Computing, 2021
@@ -181,27 +180,46 @@ title: Abdullah Al Rahat
     </div>
 </div>
 
+<div class="pub-item">
+    <div class="pub-teaser">
+        <img src="https://via.placeholder.com/220x140?text=Blind+Signature" alt="Blind Signature">
+    </div>
+    <div class="pub-details">
+        <a href="http://www.itiis.org/digital-library/manuscript/1700" class="pub-title">An Offline Electronic Payment System Based on an Untraceable Blind Signature Scheme</a>
+        <div class="pub-authors">
+            <strong>Md. [cite_start]Abdullah Al Rahat Kutubi</strong>, et al. [cite: 69]
+        </div>
+        <div class="pub-venue">
+            KSII Transactions on Internet and Information Systems, 2017
+        </div>
+        <div class="pub-links">
+            <a href="http://www.itiis.org/digital-library/manuscript/1700">[Paper]</a>
+        </div>
+    </div>
+</div>
+
+
 <h2>🎓 Education & Experience</h2>
 <ul>
     <li>
-        <strong>Ph.D. Student, Computer Science</strong> (2021 - Present)<br>
-        Georgia State University, Atlanta, USA [cite: 6, 10]
+        <strong>Ph.D. [cite_start]Student in Computer Science</strong> (2021 - Present) [cite: 6, 10]<br>
+        Georgia State University, Atlanta, USA
     </li>
     <li>
-        <strong>Lecturer</strong> (2017 - 2021)<br>
-        BAUET, Bangladesh [cite: 49, 50]
+        [cite_start]<strong>Lecturer</strong> (2017 - 2021) [cite: 48, 50]<br>
+        BAUET, Bangladesh
     </li>
     <li>
-        <strong>M.Sc. in Applied Information Technology</strong> (2015 - 2017)<br>
-        Kookmin University, South Korea [cite: 9, 11]
+        [cite_start]<strong>M.Sc. in Applied Information Technology</strong> (2015 - 2017) [cite: 9, 12]<br>
+        [cite_start]Kookmin University, South Korea (CGPA: 4.5/4.5) [cite: 13]
     </li>
     <li>
-        <strong>B.Sc. in Computer Science</strong> (2010 - 2014)<br>
-        KUET, Bangladesh [cite: 16, 32]
+        [cite_start]<strong>Software Engineer</strong> (2015) [cite: 53]<br>
+        SSDTECH, Dhaka, Bangladesh
     </li>
 </ul>
 
 <br><br>
 <div style="font-size: 12px; color: #999; text-align: center;">
-    Template inspired by Haozhe Zhao. Last updated: November 2025.
+    Last updated: November 2025.
 </div>
