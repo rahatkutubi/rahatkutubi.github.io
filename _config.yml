@@ -1,22 +1,26 @@
-# Site settings
 title: Abdullah Al Rahat
-description: Ph.D. Student | Generative AI | Vision-Language Models | Georgia State University
-url: "https://rahatkutubi.github.io" # your site URL
-baseurl: ""
+description: Ph.D. Student in Computer Science at Georgia State University.
+url: "https://rahatkutubi.github.io"
+show_downloads: false
+theme: jekyll-theme-minimal
 
-# Author info
 author:
-  name: "Abdullah Al Rahat"
-  email: "your-email@example.com"
-  role: "Ph.D. Student"
-  department: "Computer Science"
-  university: "Georgia State University"
-  university_url: "https://www.gsu.edu"
-  location: "Atlanta, GA"
-  github: "rahatkutubi"
-  scholar: "https://scholar.google.com/citations?user=XXXXXX"
+  name: Abdullah Al Rahat
+  role: Ph.D. Student
+  department: Department of Computer Science
+  university: Georgia State University
+  university_url: "https://www.gsu.edu/"
+  advisor: Dr. Hemanth Venkateswara
+  advisor_url: "#" # Add his website link here
+  location: Atlanta, Georgia, USA
+  email: rahatcse2k9@gmail.com
+  github: rahatkutubi
+  scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+  linkedin: "https://linkedin.com/in/YOUR_ID"
 
-# Build settings
-theme: academicpages
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+exclude: [Gemfile, Gemfile.lock, node_modules, vendor]
