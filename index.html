@@ -1,206 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Al Rahat | Georgia State University</title>
-    <meta name="description" content="Ph.D. Student in Computer Science at Georgia State University.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Al Rahat | Georgia State University</title>
+<meta name="description" content="Ph.D. Student in Computer Science at Georgia State University.">
 
-    <style>
-        /* --------------------- GLOBAL --------------------- */
-        body {
-            font-family: 'Verdana', 'Segoe UI', sans-serif;
-            font-size: 15px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px; 
-            margin: 0 auto;
-            padding: 0 20px 40px 20px;
-            background-color: #fff;
-        }
-        a { color: #0066cc; text-decoration: none; transition: color 0.2s; }
-        a:hover { color: #004499; text-decoration: underline; }
-        strong { color: #000; font-weight: 600; }
+<style>
+    /* --------------------- GLOBAL --------------------- */
+    body {
+        font-family: 'Verdana', 'Segoe UI', sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1200px; 
+        margin: 0 auto;
+        padding: 0 20px 40px 20px;
+        background-color: #fff;
+    }
+    a { color: #0066cc; text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #004499; text-decoration: underline; }
+    strong { color: #000; font-weight: 600; }
 
-        /* --------------------- TOP MENU --------------------- */
-        .top-menu {
-            position: sticky;
-            top: 0;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(5px);
-            padding: 20px 0; 
-            display: flex;
-            justify-content: flex-start;
-            gap: 30px;
-            border-bottom: 1px solid #eee;
-            z-index: 1000;
-            margin-bottom: 40px;
-            overflow-x: auto;
-        }
-        .top-menu a {
-            font-weight: 700;
-            color: #444;
-            text-transform: uppercase;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-        .top-menu a:hover { color: #0066cc; text-decoration: none; }
+    /* --------------------- TOP MENU --------------------- */
+    .top-menu {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(5px);
+        padding: 20px 0; 
+        display: flex;
+        justify-content: flex-start;
+        gap: 50px;
+        border-bottom: 1px solid #eee;
+        z-index: 1000;
+        margin-bottom: 40px;
+    }
+    .top-menu a {
+        font-weight: 700;
+        color: #444;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+    .top-menu a:hover { color: #0066cc; text-decoration: none; }
 
-        /* --------------------- HEADER --------------------- */
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 50px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .bio-content { width: 70%; padding-right: 40px; }
-        .bio-content h1 { font-size: 38px; font-weight: 700; margin: 0 0 10px 0; color: #111; scroll-margin-top: 100px; }
-        .bio-meta { font-size: 16px; color: #555; margin-bottom: 25px; }
-        .bio-meta span { display: block; margin-bottom: 4px; }
-        .social-links { margin-top: 25px; font-family: 'Courier New', monospace; font-size: 14px; }
-        .social-links a { margin-right: 20px; font-weight: bold; }
-        
-        .profile-img-container { width: 30%; text-align: right; }
-        .profile-img {
-            width: 250px; height: 250px; object-fit: cover; border-radius: 50%;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1); border: 4px solid #fff;
-        }
+    /* --------------------- HEADER --------------------- */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #f0f0f0;
+        scroll-margin-top: 80px;
+    }
+    .bio-content { width: 70%; padding-right: 40px; }
+    .bio-content h1 { font-size: 38px; font-weight: 700; margin: 0 0 10px 0; color: #111; }
+    .bio-meta { font-size: 16px; color: #555; margin-bottom: 25px; }
+    .bio-meta span { display: block; margin-bottom: 4px; }
+    .social-links { margin-top: 25px; font-family: 'Courier New', monospace; font-size: 14px; }
+    .social-links a { margin-right: 20px; font-weight: bold; }
+    .profile-img-container { width: 30%; text-align: right; }
+    .profile-img {
+        width: 250px; height: 250px; object-fit: cover; border-radius: 50%;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1); border: 4px solid #fff;
+    }
 
-        /* --------------------- SECTIONS --------------------- */
-        h2 {
-            font-size: 24px; font-weight: 700; margin-top: 60px; margin-bottom: 30px;
-            padding-bottom: 10px; border-bottom: 1px solid #eee; color: #111;
-            scroll-margin-top: 100px;
-        }
+    /* --------------------- SECTIONS --------------------- */
+    h2 {
+        font-size: 24px; font-weight: 700; margin-top: 60px; margin-bottom: 30px;
+        padding-bottom: 10px; border-bottom: 1px solid #eee; color: #111;
+        scroll-margin-top: 80px;
+    }
 
-        /* News */
-        .news-item { margin-bottom: 15px; font-size: 15px; display: flex; align-items: baseline;}
-        .news-date { 
-            font-family: 'Courier New', monospace; font-weight: bold; color: #444; 
-            margin-right: 15px; background: #f5f5f5; padding: 2px 8px; border-radius: 4px; 
-            min-width: 100px; text-align: center;
-        }
+    /* News */
+    .news-item { margin-bottom: 15px; font-size: 15px; display: flex; align-items: baseline;}
+    .news-date { 
+        font-family: 'Courier New', monospace; font-weight: bold; color: #444; 
+        margin-right: 15px; background: #f5f5f5; padding: 2px 8px; border-radius: 4px; 
+        min-width: 100px; text-align: center;
+    }
 
-        /* Publications & Projects */
-        .item-container { display: flex; margin-bottom: 40px; gap: 35px; }
-        .item-teaser { flex: 0 0 260px; max-width: 260px; }
-        .item-teaser img { width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #f2f2f2; }
-        .item-details { flex: 1; }
-        .item-title { font-weight: 700; font-size: 17px; color: #000; display: block; margin-bottom: 6px; line-height: 1.4; }
-        .item-meta { color: #555; margin-bottom: 6px; font-size: 15px; }
-        .item-venue { font-style: italic; color: #666; margin-bottom: 10px; font-size: 15px; }
-        .item-desc { font-size: 14px; color: #444; line-height: 1.5; margin-bottom: 12px; }
-        .tag-links a {
-            display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase;
-            border: 1px solid #ddd; border-radius: 3px; padding: 3px 8px; margin-right: 8px;
-            color: #666; background-color: #fcfcfc;
-        }
-        .tag-links a:hover { background-color: #f0f0f0; color: #000; text-decoration: none; border-color: #bbb;}
+    /* Publications */
+    .item-container { display: flex; margin-bottom: 40px; gap: 35px; }
+    .item-teaser { flex: 0 0 260px; max-width: 260px; }
+    .item-teaser img { width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #f2f2f2; }
+    .item-details { flex: 1; }
+    .item-title { font-weight: 700; font-size: 17px; color: #000; display: block; margin-bottom: 6px; line-height: 1.4; }
+    .item-meta { color: #555; margin-bottom: 6px; font-size: 15px; }
+    .item-venue { font-style: italic; color: #666; margin-bottom: 10px; font-size: 15px; }
+    .item-desc { font-size: 14px; color: #444; line-height: 1.5; margin-bottom: 12px; }
+    .tag-links a {
+        display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase;
+        border: 1px solid #ddd; border-radius: 3px; padding: 3px 8px; margin-right: 8px;
+        color: #666; background-color: #fcfcfc;
+    }
+    .tag-links a:hover { background-color: #f0f0f0; color: #000; text-decoration: none; border-color: #bbb;}
 
-        /* Experience & Education */
-        .exp-list { list-style: none; padding: 0; }
-        .exp-item { display: flex; margin-bottom: 25px; border-left: 3px solid #eee; padding-left: 25px; }
-        .exp-date { flex: 0 0 150px; font-weight: bold; color: #666; font-size: 15px; }
-        .exp-detail { flex: 1; }
-        .exp-role { font-weight: bold; font-size: 16px; color: #000; }
-        .exp-place { color: #555; margin-top: 2px; }
+    /* Experience & Education */
+    .exp-list { list-style: none; padding: 0; }
+    .exp-item { display: flex; margin-bottom: 25px; border-left: 3px solid #eee; padding-left: 25px; }
+    .exp-date { flex: 0 0 150px; font-weight: bold; color: #666; font-size: 15px; }
+    .exp-detail { flex: 1; }
+    .exp-role { font-weight: bold; font-size: 16px; color: #000; }
+    .exp-place { color: #555; margin-top: 2px; }
 
-        /* --------------------- RESPONSIVE --------------------- */
-        @media (max-width: 800px) {
-            .top-menu { justify-content: flex-start; overflow-x: auto; white-space: nowrap; padding-left: 0; }
-            .header-container { flex-direction: column-reverse; text-align: center; }
-            .bio-content { width: 100%; padding: 0; }
-            .profile-img-container { width: 100%; text-align: center; margin-bottom: 30px; }
-            .item-container { flex-direction: column; }
-            .item-teaser { width: 100%; max-width: 100%; margin-bottom: 15px; }
-            .item-teaser img { max-width: 350px; margin: 0 auto; display: block; }
-            .exp-item { flex-direction: column; }
-            .exp-date { margin-bottom: 5px; }
-        }
-    </style>
+    /* --------------------- RESPONSIVE --------------------- */
+    @media (max-width: 800px) {
+        .top-menu { justify-content: flex-start; overflow-x: auto; white-space: nowrap; padding-left: 0; }
+        .header-container { flex-direction: column-reverse; text-align: center; }
+        .bio-content { width: 100%; padding: 0; }
+        .profile-img-container { width: 100%; text-align: center; margin-bottom: 30px; }
+        .item-container { flex-direction: column; }
+        .item-teaser { width: 100%; max-width: 100%; margin-bottom: 15px; }
+        .item-teaser img { max-width: 350px; margin: 0 auto; display: block; }
+        .exp-item { flex-direction: column; }
+        .exp-date { margin-bottom: 5px; }
+    }
+</style>
 </head>
 <body>
 
-    <!-- TOP MENU -->
-    <div class="top-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-    </div>
+<!-- TOP MENU -->
+<div class="top-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+</div>
 
-    <!-- HEADER / HOME -->
-    <div id="home" class="header-container">
-        <div class="bio-content">
-            <h1 id="about">Abdullah Al Rahat</h1>
-            <div class="bio-meta">
-                <span>Ph.D. Student in Computer Science</span>
-                <span><a href="https://www.gsu.edu/" target="_blank">Georgia State University</a></span>
-                <span>📍 Atlanta, Georgia, USA</span>
-            </div>
-            <p>
-                I am a Ph.D. student researching <strong>Generative AI</strong>, <strong>LLMs</strong>, <strong>Vision-Language Models (VLM)</strong>, and <strong>Diffusion Models</strong>. I am currently advised by <a href="#">Dr. Hemanth Venkateswara</a>.
-            </p>
-            <p>
-                My work focuses on instruction-based image editing (NaturalEdit) and dataset augmentation strategies (Mixing Visual Concepts). Previously, I was a Lecturer at BAUET and received my M.Sc. from Kookmin University.
-            </p>
-            <div class="social-links">
-                <a href="mailto:rahatcse2k9@gmail.com">Email</a>
-                <a href="assets/rahat_resume.pdf">CV</a>
-                <a href="https://github.com/rahatkutubi">GitHub</a>
-                <a href="YOUR_SCHOLAR_LINK">Google Scholar</a>
-                <a href="YOUR_LINKEDIN_LINK">LinkedIn</a>
-            </div>
+<!-- HEADER -->
+<div id="home" class="header-container">
+    <div class="bio-content">
+        <h1 id="about">Abdullah Al Rahat</h1>
+        <div class="bio-meta">
+            <span>Ph.D. Student in Computer Science</span>
+            <span><a href="https://www.gsu.edu/" target="_blank">Georgia State University</a></span>
+            <span>📍 Atlanta, Georgia, USA</span>
         </div>
-        <div class="profile-img-container">
-            <img src="assets/profile.jpg" alt="Abdullah Al Rahat" class="profile-img">
+        <p>
+            I am a fourth-year Ph.D. student in the Department of Computer Science at Georgia State University, advised by Dr. Hemnath. My research focuses on generative AI, particularly on diffusion models, image and video editing, and computer vision.
+        </p>
+        <p>
+            Before joining GSU, I received my B.Sc. degree in Computer Science and Engineering from Khulna University of Engineering & Technology (KUET), Bangladesh. Previously, I worked as a Software Engineer at SSD-TECH.
+        </p>
+        <div class="social-links">
+            <a href="mailto:rahatcse2k9@gmail.com">Email</a>
+            <a href="assets/rahat_resume.pdf">CV</a>
+            <a href="https://github.com/rahatkutubi">GitHub</a>
+            <a href="YOUR_SCHOLAR_LINK">Google Scholar</a>
+            <a href="YOUR_LINKEDIN_LINK">LinkedIn</a>
         </div>
     </div>
-
-    <!-- NEWS -->
-    <h2 id="news">🔥 News</h2>
-    <div class="news-item"><div class="news-date">Dec 2024</div><div>Paper "Dataset Augmentation by Mixing Visual Concepts" accepted to <strong>WACV 2025</strong>!</div></div>
-    <div class="news-item"><div class="news-date">Aug 2021</div><div>Started Ph.D. journey at Georgia State University.</div></div>
-
-    <!-- PUBLICATIONS -->
-    <h2 id="publications">📝 Selected Publications</h2>
-    <!-- Repeat your publication items as in your previous code -->
-
-    <!-- PROJECTS -->
-    <h2 id="projects">🛠️ Selected Projects</h2>
-    <div class="item-container">
-        <div class="item-details">
-            <span class="item-title">NaturalEdit: Natural instruction-based image editing with Diffusion Model (running)</span>
-        </div>
+    <div class="profile-img-container">
+        <img src="assets/profile.jpg" alt="Abdullah Al Rahat" class="profile-img">
     </div>
-    <div class="item-container">
-        <div class="item-details">
-            <span class="item-title">Dataset Augmentation by Mixing Visual Concepts</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <div class="item-details">
-            <span class="item-title">RSNA-MICCAI Brain Tumor Radiogenomic Classification</span>
-        </div>
-    </div>
+</div>
 
-    <!-- EXPERIENCE -->
-    <h2 id="experience">💼 Experience</h2>
-    <!-- Repeat your experience items -->
+<!-- NEWS -->
+<h2 id="news">🔥 News</h2>
+<div class="news-item">
+    <div class="news-date">Dec 2024</div>
+    <div>Paper "Dataset Augmentation by Mixing Visual Concepts" accepted to <strong>WACV 2025</strong>!</div>
+</div>
+<div class="news-item">
+    <div class="news-date">Aug 2021</div>
+    <div>Started Ph.D. journey at Georgia State University.</div>
+</div>
 
-    <!-- EDUCATION -->
-    <h2 id="education">🎓 Education</h2>
-    <!-- Repeat your education items -->
+<!-- PUBLICATIONS -->
+<h2 id="publications">📝 Selected Publications</h2>
 
-    <br><br>
-    <div style="font-size: 12px; color: #999; text-align: center; border-top:1px solid #eee; padding-top:20px;">
-        &copy; 2025 Abdullah Al Rahat.
+<!-- Example publications -->
+<div class="item-container">
+    <div class="item-teaser"><img src="assets/payment_system_teaser.png" alt="Payment System" onerror="this.style.display='none'"></div>
+    <div class="item-details">
+        <a href="https://www.sciencedirect.com/science/article/pii/S2667295221000210" class="item-title">
+            A Simplified Scheme for Secure Offline Electronic Payment Systems
+        </a>
+        <div class="item-meta"><strong>MAAR Kutubi</strong>, KMR Alam, Y Morimoto</div>
+        <div class="item-venue">High-Confidence Computing 1 (2), 100031</div>
+        <div class="item-desc">Cited by 13 • Year: 2021</div>
     </div>
+</div>
+
+<div class="item-container">
+    <div class="item-teaser"><img src="assets/blind_signature_teaser.png" alt="Blind Signature" onerror="this.style.display='none'"></div>
+    <div class="item-details">
+        <a href="http://www.itiis.org/digital-library/manuscript/1700" class="item-title">
+            An Offline Electronic Payment System Based on an Untraceable Blind Signature Scheme
+        </a>
+        <div class="item-meta"><strong>MAAR Kutubi</strong>, KMR Alam, R Tahsin, GG Ali, PHJ Chong, Y Morimoto</div>
+        <div class="item-venue">KSII Transactions on Internet and Information Systems (TIIS) 11 (5), 2628-2645</div>
+        <div class="item-desc">Cited by 12 • Year: 2017</div>
+    </div>
+</div>
+
+<div class="item-container">
+    <div class="item-teaser"><img src="assets/wacv_teaser.png" alt="WACV Teaser" onerror="this.style.display='none'"></div>
+    <div class="item-details">
+        <a href="https://arxiv.org/abs/2412.15358" class="item-title">
+            Dataset Augmentation by Mixing Visual Concepts
+        </a>
+        <div class="item-meta"><strong>A Al Rahat</strong>, H Venkateswara</div>
+        <div class="item-venue">2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</div>
+        <div class="item-desc">Cited by – • Year: 2025</div>
+    </div>
+</div>
+
+<div class="item-container">
+    <div class="item-teaser"><img src="assets/kompsat_teaser.png" alt="KOMPSAT Teaser" onerror="this.style.display='none'"></div>
+    <div class="item-details">
+        <a href="#" class="item-title">
+            Seasonal Dependency Analysis of Tasseled Cap Components for KOMPSAT-3 Data in Land Cover Classification
+        </a>
+        <div class="item-meta"><strong>MAAR Kutubi</strong>, MG Hong, S Hossain, C Kim</div>
+        <div class="item-venue">2019 International Conference on Electrical, Computer and Communication Engineering (ECCE)</div>
+        <div class="item-desc">Cited by – • Year: 2019</div>
+    </div>
+</div>
+
+<div class="item-container">
+    <div class="item-teaser"><img src="assets/genetic_teaser.png" alt="Genetic Algorithm Teaser" onerror="this.style.display='none'"></div>
+    <div class="item-details">
+        <a href="#" class="item-title">
+            Evaluating the Performance of Four Selections in Genetic Algorithms-Based Multispectral Pixel Clustering
+        </a>
+        <div class="item-meta"><strong>AAR Kutubi</strong>, MG Hong, C Kim</div>
+        <div class="item-venue">Korean Journal of Remote Sensing 34 (1), 151-166</div>
+        <div class="item-desc">Cited by – • Year: 2018</div>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<h2 id="projects">🛠️ Selected Projects</h2>
+<div class="item-container"><div class="item-details"><span class="item-title">NaturalEdit: Natural instruction-based image editing with Diffusion Model (running)</span></div></div>
+<div class="item-container"><div class="item-details"><span class="item-title">Dataset Augmentation by Mixing Visual Concepts</span></div></div>
+<div class="item-container"><div class="item-details"><span class="item-title">RSNA-MICCAI Brain Tumor Radiogenomic Classification</span></div></div>
+
+<!-- EXPERIENCE -->
+<h2 id="experience">💼 Experience</h2>
+<ul class="exp-list">
+    <li class="exp-item"><div class="exp-date">2021 – Present</div><div class="exp-detail"><div class="exp-role">Graduate Research Assistant</div><div class="exp-place">Georgia State University, Atlanta, GA</div></div></li>
+    <li class="exp-item"><div class="exp-date">2017 – 2021</div><div class="exp-detail"><div class="exp-role">Lecturer</div><div class="exp-place">BAUET, Bangladesh</div></div></li>
+    <li class="exp-item"><div class="exp-date">2015 – 2017</div><div class="exp-detail"><div class="exp-role">Research Assistant</div><div class="exp-place">Kookmin University, South Korea</div></div></li>
+    <li class="exp-item"><div class="exp-date">May – Aug 2015</div><div class="exp-detail"><div class="exp-role">Software Engineer</div><div class="exp-place">SSDTECH, Dhaka, Bangladesh</div></div></li>
+</ul>
+
+<!-- EDUCATION -->
+<h2 id="education">🎓 Education</h2>
+<ul class="exp-list">
+    <li class="exp-item"><div class="exp-date">2021 – Present</div><div class="exp-detail"><div class="exp-role">Ph.D. in Computer Science</div><div class="exp-place">Georgia State University, Atlanta, GA</div></div></li>
+    <li class="exp-item"><div class="exp-date">2015 – 2017</div><div class="exp-detail"><div class="exp-role">M.Sc. in Applied Information Technology</div><div class="exp-place">Kookmin University, South Korea (CGPA: 4.5/4.5)</div></div></li>
+    <li class="exp-item"><div class="exp-date">2010 – 2014</div><div class="exp-detail"><div class="exp-role">B.Sc. in Computer Science and Engineering</div><div class="exp-place">KUET, Khulna, Bangladesh</div></div></li>
+</ul>
+
+<!-- FOOTER -->
+<br><br>
+<div style="font-size: 12px; color: #999; text-align: center; border-top:1px solid #eee; padding-top:20px;">
+    &copy; 2025 Abdullah Al Rahat.
+</div>
 
 </body>
 </html>
