@@ -7,20 +7,22 @@ theme: jekyll-theme-minimal
 author:
   name: Abdullah Al Rahat
   role: Ph.D. Student
-  department: Department of Computer Science
+  department: Computer Science
   university: Georgia State University
-  university_url: "https://www.gsu.edu/"
   advisor: Dr. Hemanth Venkateswara
-  advisor_url: "#" # Add his website link here
-  location: Atlanta, Georgia, USA
   email: rahatcse2k9@gmail.com
   github: rahatkutubi
   scholar: "https://scholar.google.com/citations?user=YOUR_ID"
-  linkedin: "https://linkedin.com/in/YOUR_ID"
+
+# This tells Jekyll to read the _publications and _projects folders
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  projects:
+    output: true
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
 
-markdown: kramdown
-exclude: [Gemfile, Gemfile.lock, node_modules, vendor]
+exclude: [Gemfile, Gemfile.lock, node_modules]
