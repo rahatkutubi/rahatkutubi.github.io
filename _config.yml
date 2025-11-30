@@ -1,14 +1,25 @@
-title: "Abdullah Al Rahat"
-description: "Ph.D. Student — Generative AI & Vision-Language Research"
+# -----------------------------------------------------------------------------
+# Site Settings
+# -----------------------------------------------------------------------------
+title: Abdullah Al Rahat
+description: Ph.D. Student in Computer Science at Georgia State University. Researching Generative AI, VLM, and Diffusion Models.
+show_downloads: false # Removes the "Download ZIP" buttons
 theme: jekyll-theme-minimal
-logo: /assets/profile.jpg
-show_downloads: false
 
-# Navigation
-pages:
-  - index.md
-  - publications.md
-  - projects.md
-  - cv.md
-  - contact.md
+# -----------------------------------------------------------------------------
+# Author Information (SEO & Google Scholar)
+# -----------------------------------------------------------------------------
+author:
+  name: Abdullah Al Rahat
+  email: rahatcse2k9@gmail.com
+  github: rahatkutubi
+
+# -----------------------------------------------------------------------------
+# Plugins & Build
+# -----------------------------------------------------------------------------
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
 
