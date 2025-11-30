@@ -1,28 +1,32 @@
-title: Abdullah Al Rahat
-description: Ph.D. Student in Computer Science at Georgia State University.
+# ---------------------------------------
+# Site Settings
+# ---------------------------------------
+title: "Abdullah Al Rahat"
+description: "Ph.D. Student | Generative AI | Vision-Language Models | Georgia State University"
 url: "https://rahatkutubi.github.io"
-show_downloads: false
-theme: jekyll-theme-minimal
+baseurl: ""
 
+# ---------------------------------------
+# Author Info
+# ---------------------------------------
 author:
-  name: Abdullah Al Rahat
-  role: Ph.D. Student
-  department: Computer Science
-  university: Georgia State University
-  advisor: Dr. Hemanth Venkateswara
-  email: rahatcse2k9@gmail.com
-  github: rahatkutubi
-  scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+  name: "Abdullah Al Rahat"
+  email: "your-email@example.com"
+  role: "Ph.D. Student"
+  department: "Computer Science"
+  university: "Georgia State University"
+  university_url: "https://www.gsu.edu"
+  location: "Atlanta, GA"
+  scholar: "https://scholar.google.com/citations?user=XXXXXX"
+  # Removed github entirely
 
-# This tells Jekyll to read the _publications and _projects folders
-collections:
-  publications:
-    output: true
-    permalink: /publications/:path/
-  projects:
-    output: true
-
+# ---------------------------------------
+# Theme & Build Settings
+# ---------------------------------------
+theme: academicpages
 plugins:
-  - jekyll-seo-tag
-
-exclude: [Gemfile, Gemfile.lock, node_modules]
+  - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
