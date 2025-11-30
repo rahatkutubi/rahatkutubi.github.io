@@ -2,24 +2,30 @@
 # Site Settings
 # -----------------------------------------------------------------------------
 title: Abdullah Al Rahat
-description: Ph.D. Student in Computer Science at Georgia State University. Researching Generative AI, VLM, and Diffusion Models.
-show_downloads: false # Removes the "Download ZIP" buttons
+description: Ph.D. Student in Computer Science at Georgia State University.
+show_downloads: false
 theme: jekyll-theme-minimal
 
 # -----------------------------------------------------------------------------
-# Author Information (SEO & Google Scholar)
+# Left Side Profile Data
 # -----------------------------------------------------------------------------
 author:
   name: Abdullah Al Rahat
+  role: Ph.D. Student
+  department: Department of Computer Science
+  university: Georgia State University
+  university_url: "https://www.gsu.edu/"
+  location: Atlanta, Georgia, USA
   email: rahatcse2k9@gmail.com
   github: rahatkutubi
+  # Replace with your actual Google Scholar ID or URL
+  scholar: "https://scholar.google.com/citations?user=YOUR_ID" 
+  linkedin: "https://linkedin.com/in/YOUR_ID"
 
 # -----------------------------------------------------------------------------
-# Plugins & Build
+# SEO Plugins
 # -----------------------------------------------------------------------------
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
 markdown: kramdown
-
