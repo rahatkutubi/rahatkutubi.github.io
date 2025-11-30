@@ -1,31 +1,22 @@
-# -----------------------------------------------------------------------------
-# Site Settings
-# -----------------------------------------------------------------------------
+# Site settings
 title: Abdullah Al Rahat
-description: Ph.D. Student in Computer Science at Georgia State University.
-show_downloads: false
-theme: jekyll-theme-minimal
+description: Ph.D. Student | Generative AI | Vision-Language Models | Georgia State University
+url: "https://rahatkutubi.github.io" # your site URL
+baseurl: ""
 
-# -----------------------------------------------------------------------------
-# Left Side Profile Data
-# -----------------------------------------------------------------------------
+# Author info
 author:
-  name: Abdullah Al Rahat
-  role: Ph.D. Student
-  department: Department of Computer Science
-  university: Georgia State University
-  university_url: "https://www.gsu.edu/"
-  location: Atlanta, Georgia, USA
-  email: rahatcse2k9@gmail.com
-  github: rahatkutubi
-  # Replace with your actual Google Scholar ID or URL
-  scholar: "https://scholar.google.com/citations?user=YOUR_ID" 
-  linkedin: "https://linkedin.com/in/YOUR_ID"
+  name: "Abdullah Al Rahat"
+  email: "your-email@example.com"
+  role: "Ph.D. Student"
+  department: "Computer Science"
+  university: "Georgia State University"
+  university_url: "https://www.gsu.edu"
+  location: "Atlanta, GA"
+  github: "rahatkutubi"
+  scholar: "https://scholar.google.com/citations?user=XXXXXX"
 
-# -----------------------------------------------------------------------------
-# SEO Plugins
-# -----------------------------------------------------------------------------
+# Build settings
+theme: academicpages
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-markdown: kramdown
+  - jekyll-feed
