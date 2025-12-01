@@ -23,49 +23,29 @@
     strong { color: #000; font-weight: 600; }
 
     /* --------------------- TOP MENU --------------------- */
-    .top-menu {
-        position: sticky;
-        top: 0;
-        background: #ffffff; /* solid white for a clean professional look */
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* subtle shadow */
-        padding: 15px 40px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 60px; /* increased spacing for clarity */
-        border-bottom: 1px solid #e0e0e0;
-        z-index: 1000;
-    }
-
-    .top-menu a {
-        font-weight: 600;
-        color: #333;
-        text-transform: uppercase;
-        font-size: 14px;
-        letter-spacing: 0.7px;
-        padding: 6px 0;
-        transition: all 0.3s ease;
-        position: relative;
-    }
-
-    .top-menu a:hover {
-        color: #0066cc;
-    }
-
-    .top-menu a::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 0;
-        height: 2px;
-        background-color: #0066cc;
-        transition: width 0.3s ease;
-    }
-
-    .top-menu a:hover::after {
-        width: 100%;
-    }
+/* -----------------------------------------------------------------------
+           TOP MENU
+           ----------------------------------------------------------------------- */
+        .top-menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #fafafa;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .top-menu a {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #800000;
+        }
+        .top-menu a:hover {
+            color: #c00;
+        }
 
     /* --------------------- HEADER --------------------- */
     .header-container {
@@ -173,8 +153,8 @@
             <a href="mailto:rahatcse2k9@gmail.com">Email</a>
             <a href="assets/rahat_resume.pdf">CV</a>
             <a href="https://github.com/rahatkutubi">GitHub</a>
-            <a href="YOUR_SCHOLAR_LINK">Google Scholar</a>
-            <a href="YOUR_LINKEDIN_LINK">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=75Ox-8kAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/abdullah-al-rahat-a94554ab/">LinkedIn</a>
         </div>
     </div>
     <div class="profile-img-container">
