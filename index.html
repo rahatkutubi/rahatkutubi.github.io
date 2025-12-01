@@ -26,24 +26,46 @@
     .top-menu {
         position: sticky;
         top: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(5px);
-        padding: 20px 0; 
+        background: #ffffff; /* solid white for a clean professional look */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* subtle shadow */
+        padding: 15px 40px;
         display: flex;
         justify-content: flex-start;
-        gap: 50px;
-        border-bottom: 1px solid #eee;
+        align-items: center;
+        gap: 60px; /* increased spacing for clarity */
+        border-bottom: 1px solid #e0e0e0;
         z-index: 1000;
-        margin-bottom: 40px;
     }
+
     .top-menu a {
-        font-weight: 700;
-        color: #444;
+        font-weight: 600;
+        color: #333;
         text-transform: uppercase;
-        font-size: 13px;
-        letter-spacing: 0.5px;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        padding: 6px 0;
+        transition: all 0.3s ease;
+        position: relative;
     }
-    .top-menu a:hover { color: #0066cc; text-decoration: none; }
+
+    .top-menu a:hover {
+        color: #0066cc;
+    }
+
+    .top-menu a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: #0066cc;
+        transition: width 0.3s ease;
+    }
+
+    .top-menu a:hover::after {
+        width: 100%;
+    }
 
     /* --------------------- HEADER --------------------- */
     .header-container {
@@ -122,7 +144,7 @@
 </head>
 <body>
 
-<!-- TOP MENU -->
+<div class="top-menu">
     <a href="#home">Home</a>
     <a href="#about">About Me</a>
     <a href="#news">News</a>
@@ -130,9 +152,8 @@
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
-    <a href="research.html">Research</a> <!-- NEW -->
+    <a href="research.html">Research</a>
 </div>
-
 <!-- HEADER -->
 <div id="home" class="header-container">
     <div class="bio-content">
@@ -157,7 +178,7 @@
         </div>
     </div>
     <div class="profile-img-container">
-        <img src="assets/profile.jpg" alt="Abdullah Al Rahat" class="profile-img">
+        <img src="assets/profile.png" alt="Abdullah Al Rahat" class="profile-img">
     </div>
 </div>
 
